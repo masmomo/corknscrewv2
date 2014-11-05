@@ -1,0 +1,101 @@
+body.bd-about-content {
+  background: #fff url(../../assets/img/bg_about-2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../files/common/bg_cover-1.jpg',sizingMethod='scale')";
+  -webkit-animation-delay: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+  transition: opacity 500 ease-in-out;
+}
+
+body.bd-food-drinks-content {
+  background: #fff url(../../assets/img/bg_food-drinks-2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../files/common/bg_cover-1.jpg',sizingMethod='scale')";
+  -webkit-animation-delay: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+
+body.bd-wines-content {
+  background: #fff url(../../assets/img/bg_wines-2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../files/common/bg_cover-1.jpg',sizingMethod='scale')";
+  -webkit-animation-delay: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+
+
+body.bd-contacts-content{
+  background: #fff url(../../assets/img/bg_contacts-2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../files/common/bg_cover-1.jpg',sizingMethod='scale')";
+  -webkit-animation-delay: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+
+
+body.bd-catering-content{
+  background: #fff url(../../assets/img/bg_catering-2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../files/common/bg_cover-1.jpg',sizingMethod='scale')";
+  -webkit-animation-delay: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+
+
+body.bd-gallery-content{
+  background: #fff url(../../assets/img/bg_gallery-2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../files/common/bg_cover-1.jpg',sizingMethod='scale')";
+  -webkit-animation-delay: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
+
+body.bd-press-content{
+  background: #fff url(../../assets/img/bg_press-2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../files/common/bg_cover-1.jpg',sizingMethod='scale')";
+  -webkit-animation-delay: 0.1s;
+  -webkit-animation-name: fontfix;
+  -webkit-animation-duration: 0.1s;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: linear;
+}
