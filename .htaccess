@@ -551,6 +551,7 @@ RewriteRule ^(.+)$ - [F,L]
 # PAGES 
 # ----------------------------------------------------------------------
 RewriteRule ^about$                                                      index.php?act=_about/index
+RewriteRule ^newsletter$                                                 index.php?act=_newsletter/index
 RewriteRule ^food-drinks$                                                index.php?act=_food-drinks/index
 RewriteRule ^wines$                                                      index.php?act=_wines/index
 RewriteRule ^events$                                                     index.php?act=_events/index

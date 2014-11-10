@@ -1,12 +1,32 @@
 
       
-      <div class="banner bnr-food-drinks animated fadeInLeft hidden" id="custom-page-content">
-        CORK&SCREW, focuses on providing a quality dining experience at affordable prices. Ranging from signature steaks, fresh salads, and succulent sandwiches to authentic Asian and modern European cuisine, CORK&SCREW offers a variety of exquisite food along with wine pairings.
-        <br><br>
-        Taking no compromise to deliver only the best for our valued customers, CORK&SCREW bar continuously invents new, innovative drinks for you to enjoy. From classics to experimental, we invite you to indulge in the fresh taste of our cocktails. Be sure to check our specialties of signature wine cocktails using only the freshest ingredients with a twist of your favorite wines!
-        <br> 
-        <div class="btn-placeholder">
-          <a class="btn btn-primary">PLAZA INDONESIA</a>
-          <a class="btn btn-primary">WISMA KODEL</a>
-        </div>
+      <div class="banner bnr-food-drinks animated fadeInLeft hidden" id="custom-page-content" style="width: 600px">
+        <strong>CUSTOMIZE YOUR EVENT</strong><br><br>
+        <br>
+        <div class="row row-10 m_b_15">
+          <div class="col-xs-4">
+            <div class="text-box">WINE &amp; BAR</div>
+          </div>
+          <div class="col-xs-8">
+            We can bring a full bar service to your doorstep. You only pay what you consume. Leave everything else to us.
+          </div>
+        </div><!--.row-10-->
+        <div class="row row-10 m_b_15">
+          <div class="col-xs-4">
+            <div class="text-box">FOOD</div>
+          </div>
+          <div class="col-xs-8">
+            Choose from our extensive menu of Asian &amp; European favorites.
+          </div>
+        </div><!--.row-10-->
+        <div class="row row-10 m_b_15">
+          <div class="col-xs-4">
+            <div class="text-box">GREAT SERVICE</div>
+          </div>
+          <div class="col-xs-8">
+            Our teams of bartenders, servers &amp; party planners can help you arrange the perfect event.
+          </div>
+        </div><!--.row-10-->
+        <br>
+        Let us know what we can do for you <a href=""><strong>CLICK HERE</strong></a>
       </div>

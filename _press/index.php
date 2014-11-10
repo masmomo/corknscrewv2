@@ -1,12 +1,55 @@
 
       
-      <div class="banner bnr-food-drinks animated fadeInLeft hidden" id="custom-page-content">
-        CORK&SCREW, focuses on providing a quality dining experience at affordable prices. Ranging from signature steaks, fresh salads, and succulent sandwiches to authentic Asian and modern European cuisine, CORK&SCREW offers a variety of exquisite food along with wine pairings.
-        <br><br>
-        Taking no compromise to deliver only the best for our valued customers, CORK&SCREW bar continuously invents new, innovative drinks for you to enjoy. From classics to experimental, we invite you to indulge in the fresh taste of our cocktails. Be sure to check our specialties of signature wine cocktails using only the freshest ingredients with a twist of your favorite wines!
-        <br> 
-        <div class="btn-placeholder">
-          <a class="btn btn-primary">PLAZA INDONESIA</a>
-          <a class="btn btn-primary">WISMA KODEL</a>
-        </div>
+      <div class="banner bnr-food-drinks animated fadeInLeft hidden" id="custom-page-content" style="width: 650px; height:380x; padding-right: 20px">
+        <strong>AWARD OF EXCELLENCE</strong><br><br><br>
+        <div class="custom-scroll">
+          <div class="row row-10 m_b_15">
+            <div class="col-xs-4">
+              <div class="text-box">WINE SPECTATOR</div>
+            </div>
+            <div class="col-xs-8">
+              <p class="double-lh">Award of Excellence <strong>2011, 2012, 2013</strong><p>
+            </div>
+          </div><!--.row-10-->
+          <div class="row row-10 m_b_15">
+            <div class="col-xs-4">
+              <div class="text-box">INDONESIA TATLER</div>
+            </div>
+            <div class="col-xs-8">
+              <p class="double-lh">Best Restaurant <strong>2008, 2009, 2010, 2013, 2014</strong><p>
+            </div>
+          </div><!--.row-10-->
+          <div class="row row-10 m_b_15">
+            <div class="col-xs-4">
+              <div class="text-box">MIELE GUIDE</div>
+            </div>
+            <div class="col-xs-8">
+              <p class="double-lh">Nominated as one of Asia’s Best Restaurants <strong>2010, 2011</strong><p>
+            </div>
+          </div><!--.row-10-->
+          <div class="row row-10 m_b_15">
+            <div class="col-xs-4">
+              <div class="text-box">JAKARTA JAVA KINI</div>
+            </div>
+            <div class="col-xs-8">
+              <p class="double-lh">Best Wine Lounge <strong>2007, 2008</strong><p>
+            </div>
+          </div><!--.row-10-->
+          <div class="row row-10 m_b_15">
+            <div class="col-xs-4">
+              <div class="text-box">NOW JAKARTA</div>
+            </div>
+            <div class="col-xs-8">
+              <p class="double-lh">Best Wine Lounge <strong>2014</strong><p>
+            </div>
+          </div><!--.row-10-->
+          <div class="row row-10 m_b_15">
+            <div class="col-xs-4">
+              <div class="text-box">NOW JAKARTA</div>
+            </div>
+            <div class="col-xs-8">
+              <p class="double-lh">Best Wine Lounge <strong>2014</strong><p>
+            </div>
+          </div><!--.row-10-->
+        </div><!--div-->
       </div>
