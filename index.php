@@ -56,7 +56,14 @@ include('static/body_loader.php');
         <label class="control-label pull-left">SEARCH</label>
         <input type="text" class="form-control pull-left">
       </div>
+      
+      <?php
+      if($act == ''){
+	  ?>
       <img class="wine" src="<?php echo $prefix_url;?>assets/img/ic_wine.png">
+      <?php
+	  }
+	  ?>
       
       <?php
       if(empty($_REQUEST['act'])) {
