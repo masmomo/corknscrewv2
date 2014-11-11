@@ -18,8 +18,8 @@ else if($act == '_wines/index'){
 
 
 /* --- NEWSLETTER --- */
-else if($act == '_wines/index'){
-   echo '<img class="ttl ttl-wines animated fadeInUp" id="custom-page-image" src="'.$prefix_url.'assets/img/text_wines.png" width="250">';
+else if($act == '_newsletter/index'){
+   echo '<img class="ttl ttl-newsletter animated fadeInUp" id="custom-page-image" src="'.$prefix_url.'assets/img/text_newsletter.png" width="250">';
 }
 
 

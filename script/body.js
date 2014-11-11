@@ -45,6 +45,20 @@ function bodyLoader(page, currClass, newClass, url){
 	  
    }
    
+   /* --- NEWSLETTER--- */
+   if(page == '_newsletter/index'){
+	   
+	  //$("body").fadeOut("slow", function() {
+	     //$(this).removeClass(currClass);
+		 //$(this).addClass(newClass);
+		 //$(this).fadeIn("slow",function(){
+		    $('#custom-page-content').removeClass('hidden');
+		    $('#custom-page-image').removeClass('hidden');
+		 //})
+	  //}); 
+	  
+   }
+   
    /* --- EVENTS--- */
    if(page == '_events/index'){
 	   

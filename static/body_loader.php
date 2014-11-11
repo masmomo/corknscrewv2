@@ -31,6 +31,13 @@ else if($act == '_wines/index'){
 }
 
 
+/* --- NEWSLETTER --- */
+else if($act == '_newsletter/index'){
+   $body_class     = 'bd-newsletter';
+   $body_new_class = 'bd-newsletter-content';
+}
+
+
 /* --- EVENTS --- */
 else if($act == '_events/index'){
    $body_class     = 'bd-events';

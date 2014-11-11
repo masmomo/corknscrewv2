@@ -59,9 +59,7 @@ include('static/body_loader.php');
       
       <?php
       if($act == ''){
-	  ?>
-      <img class="wine" src="<?php echo $prefix_url;?>assets/img/ic_wine.png">
-      <?php
+      echo '<img class="wine" src="'.$prefix_url.'assets/img/ic_wine.png">';
 	  }
 	  ?>
       
@@ -179,6 +177,14 @@ include('static/body_loader.php');
 										
 										{image : '<?php echo $prefix_url;?>/assets/img/bg_wines-1.jpg'},
 									    {image : '<?php echo $prefix_url;?>/assets/img/bg_wines-2.jpg'}
+										
+										<?php
+										/* --- NEWSLETTER --- */
+										}else if($act == '_newsletter/index'){
+										?>
+										
+										{image : '<?php echo $prefix_url;?>/assets/img/bg_newsletter-1.jpg'},
+									    {image : '<?php echo $prefix_url;?>/assets/img/bg_newsletter-2.jpg'}
 										
 										<?php
 										/* --- GALLERY --- */
