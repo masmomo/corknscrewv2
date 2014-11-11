@@ -64,11 +64,11 @@ function bodyLoader(page, currClass, newClass, url){
 	   
 	  //$("body").fadeOut("slow", function() {
 	     //$(this).removeClass(currClass);
-		 $('#custom-page-image-content-link').fadeOut(3000);
-		 $('#custom-page-image-content-new').fadeOut(3000);
+		 //$('#custom-page-image-content-link').fadeOut(3000);
+		 //$('#custom-page-image-content-new').fadeOut(3000);
 		 //$('#span-current').remove();
-		 $('#custom-page-image-content-new').fadeIn(4000);
-		 $('#custom-page-image-content-new-link').removeClass("hidden");
+		 //$('#custom-page-image-content-new').fadeIn(4000);
+		 //$('#custom-page-image-content-new-link').removeClass("hidden");
 		 //$(this).addClass(newClass);
 		 //$(this).fadeIn("slow",function(){
 		    $('#custom-page-content').removeClass('hidden');

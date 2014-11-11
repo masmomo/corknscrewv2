@@ -41,7 +41,7 @@ else if($act == '_newsletter/index'){
 /* --- EVENTS --- */
 else if($act == '_events/index'){
    $body_class     = 'bd-events';
-   $body_new_class = 'bd-events';
+   $body_new_class = 'bd-events-content';
 }
 
 
