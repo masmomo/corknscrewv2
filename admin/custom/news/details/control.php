@@ -9,9 +9,9 @@ $news_title = preg_replace("/[\/_|+ -]+/", ' ', $clean);
 // DEFINED VARIABLE
 $post_news_id  = $_POST['hidden_id'];
 $post_category = $_POST['category'];
-$post_title    = $_POST['news_title'];
+$post_title    = escape_quote($_POST['news_title']);
 $post_date     = $_POST['news_date'];
-$post_content  = addslashes($_POST['news_content']);
+$post_content  = escape_quote($_POST['news_content']);
 $get_date      = date('Y-m-d H:i:s');
 
 $news_detail       = get_news_detail($news_id);
@@ -27,33 +27,33 @@ if(isset($_POST['btn-edit-news'])){
 	  }else{
 	      $post_check = $post_title;
 	  }
-	   
-	   // CHECK UPLOAD
-	   if(empty($_POST['check_image'])){
+	  
+	  // CHECK UPLOAD
+	  if(empty($_POST['check_image'])){
 	      
-		  $img_name      = substr($_FILES['upload_news_1']['name'], 0, -4);
-		  $img_type      = substr($_FILES['upload_news_1']['name'], -4);
+	     $img_name      = substr($_FILES['upload_news_1']['name'], 0, -4);
+		 $img_type      = substr($_FILES['upload_news_1']['name'], -4);
 		  
-	      $uploads_dir   = '../files/uploads/news_image/';
-          $userfile_name = str_replace(array('(',')',' '),'_',$_FILES['upload_news_1']['name']);
-          $userfile_tmp  = $_FILES['upload_news_1']['tmp_name'];
-          $prefix        = 'news_image-';
-          $prod_img      = $uploads_dir.$prefix.$userfile_name;
+	     $uploads_dir   = '../files/uploads/news_image/';
+         $userfile_name = str_replace(array('(',')',' '),'_',$_FILES['upload_news_1']['name']);
+         $userfile_tmp  = $_FILES['upload_news_1']['tmp_name'];
+         $prefix        = 'news_image-';
+         $prod_img      = $uploads_dir.$prefix.$userfile_name;
 			
-	      move_uploaded_file($userfile_tmp, $prod_img);
-		  $slider_image  = $prefix.$userfile_name;
+	     move_uploaded_file($userfile_tmp, $prod_img);
+		 $slider_image  = $prefix.$userfile_name;
 			
-	      $post_news_image = "files/uploads/news_image/".$slider_image;
+	     $post_news_image = "files/uploads/news_image/".$slider_image;
 		  
-		  if($_POST['check_image'] != $_POST['unlink_image']){
-		     unlink("../".$_POST['unlink_image']);
-		  }
+		 if($_POST['check_image'] != $_POST['unlink_image']){
+		    unlink("../".$_POST['unlink_image']);
+		 }
 		  
-	   }else{
-	      $post_news_image = $news_detail['news_image'];
-	   }
+	  }else{
+	     $post_news_image = $news_detail['news_image'];
+	  }
 	   
-	   updateNews($post_category, $post_title, $post_date, $post_news_image, $post_content, $post_news_id);
+      updateNews($post_category, $post_title, $post_date, $post_news_image, $post_content, $post_news_id);
 	   
    }
    
@@ -113,7 +113,7 @@ if(isset($_POST['btn-edited-news'])){
    }
    
    $_SESSION['alert'] = 'success';
-   $_SESSION['msg']   = 'Item successfully changed';
+   $_SESSION['msg']   = 'Changes successfully Changed';
    
 }
 ?>

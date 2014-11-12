@@ -40,7 +40,7 @@ include("custom/pages/home/control.php");
 
     <div class="subnav">
       <div class="container clearfix">
-        <h1><span class="glyphicon glyphicon-home"></span> &nbsp; Home</h1>
+        <h1><span class="glyphicon glyphicon-home"></span> &nbsp; Gallery</h1>
         <div class="btn-placeholder">
           <input type="submit" class="btn btn-success btn-sm" value="Save Changes" name="btn-pages-home">
         </div>

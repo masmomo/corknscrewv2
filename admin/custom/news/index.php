@@ -8,8 +8,8 @@ include("control.php");
 
             <div class="subnav">
               <div class="container clearfix">
-                <h1><span class="glyphicon glyphicon-list"></span> &nbsp; Manage News</h1>
-                <select class="form-control" id="category_name_search" onchange="selectCategory()" style="width: 150px;">
+                <h1><span class="glyphicon glyphicon-list"></span> &nbsp; Manage Press</h1>
+                <select class="form-control hidden" id="category_name_search" onchange="selectCategory()" style="width: 150px;">
                   <option value="top">All Category</option>
                   
                   <?php
@@ -25,7 +25,7 @@ include("control.php");
                 </select>
                 <div class="btn-placeholder">
                   <a href="<?php echo $prefix_url.'add-news';?>">
-                    <input type="button" class="btn btn-success btn-sm" value="Add News">
+                    <input type="button" class="btn btn-success btn-sm" value="Add Press">
                   </a>
                 </div>
               </div>

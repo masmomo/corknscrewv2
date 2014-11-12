@@ -1,8 +1,11 @@
 
       
-      <div class="banner bnr-food-drinks animated fadeInLeft hidden" id="custom-page-content" style="width: 600px">
+      <div class="banner bnr-food-drinks animated fadeInLeft hidden" id="custom-page-content" style="width: 600px;">
         <strong>CUSTOMIZE YOUR EVENT</strong><br><br>
         <br>
+        
+        <div class="custom-scroll" style="height:150px;">
+        
         <div class="row row-10 m_b_15">
           <div class="col-xs-4">
             <div class="text-box">WINE &amp; BAR</div>
@@ -27,6 +30,9 @@
             Our teams of bartenders, servers &amp; party planners can help you arrange the perfect event.
           </div>
         </div><!--.row-10-->
+        
+        </div>
+        
         <br>
         Let us know what we can do for you <a href=""><strong>CLICK HERE</strong></a>
       </div>

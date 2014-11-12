@@ -559,6 +559,8 @@ RewriteRule ^contacts$                                                   index.p
 RewriteRule ^catering$                                                   index.php?act=_catering/index
 RewriteRule ^gallery$                                                    index.php?act=_gallery/index
 RewriteRule ^press$                                                      index.php?act=_press/index
+RewriteRule ^download-file/(.*)$                                         index.php?act=static/download&files=$1
+
 
 
 
@@ -581,10 +583,11 @@ RewriteRule ^admin/bless$               admin/index.php?act=dashboard/index
 RewriteRule ^admin/home$                admin/index.php?act=pages/home/home
 
 # ABOUT
-RewriteRule ^admin/about$               admin/index.php?act=pages/about/about
+#RewriteRule ^admin/about$               admin/index.php?act=pages/about/about
+RewriteRule ^admin/page/(.*)$               admin/index.php?act=pages/about/about&page=$1
 
 # CONTACT
-RewriteRule ^admin/contact$             admin/index.php?act=pages/contact/contact
+RewriteRule ^admin/contact$             admin/index.php?act=pages/contact_/contact
 
 
 

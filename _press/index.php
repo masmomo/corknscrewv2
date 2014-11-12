@@ -1,55 +1,65 @@
+<?php
+/*
+# ----------------------------------------------------------------------
+# FUNCTIONS
+# ----------------------------------------------------------------------
+*/
 
+function count_press(){
+   $conn   = connDB();
+   $sql    = "SELECT COUNT(*) AS rows FROM tbl_news WHERE `news_visibility` = 'yes'";
+   $query  = mysql_query($sql, $conn);
+   $result = mysql_fetch_array($query);
+   
+   return $result;
+}
+
+
+function get_press(){
+   $conn   = connDB();
+   $sql    = "SELECT * FROM tbl_news WHERE `news_visibility` = 'yes'";
+   $query  = mysql_query($sql, $conn);
+   $row    = array();
+   
+   while($result = mysql_fetch_array($query)){
+      array_push($row, $result);
+   }
+   
+   return $row;
+}
+
+
+/* --- CALL FUNCTIONS --- */
+$count = count_press();
+$data  = get_press();
+?>
       
       <div class="banner bnr-food-drinks animated fadeInLeft hidden" id="custom-page-content" style="width: 650px; height:380x; padding-right: 20px">
         <strong>AWARD OF EXCELLENCE</strong><br><br><br>
         <div class="custom-scroll">
-          <div class="row row-10 m_b_15">
-            <div class="col-xs-4">
-              <div class="text-box">WINE SPECTATOR</div>
-            </div>
-            <div class="col-xs-8">
-              <p class="double-lh">Award of Excellence <strong>2011, 2012, 2013</strong><p>
-            </div>
-          </div><!--.row-10-->
-          <div class="row row-10 m_b_15">
-            <div class="col-xs-4">
-              <div class="text-box">INDONESIA TATLER</div>
-            </div>
-            <div class="col-xs-8">
-              <p class="double-lh">Best Restaurant <strong>2008, 2009, 2010, 2013, 2014</strong><p>
-            </div>
-          </div><!--.row-10-->
-          <div class="row row-10 m_b_15">
-            <div class="col-xs-4">
-              <div class="text-box">MIELE GUIDE</div>
-            </div>
-            <div class="col-xs-8">
-              <p class="double-lh">Nominated as one of Asia’s Best Restaurants <strong>2010, 2011</strong><p>
-            </div>
-          </div><!--.row-10-->
-          <div class="row row-10 m_b_15">
-            <div class="col-xs-4">
-              <div class="text-box">JAKARTA JAVA KINI</div>
-            </div>
-            <div class="col-xs-8">
-              <p class="double-lh">Best Wine Lounge <strong>2007, 2008</strong><p>
-            </div>
-          </div><!--.row-10-->
-          <div class="row row-10 m_b_15">
-            <div class="col-xs-4">
-              <div class="text-box">NOW JAKARTA</div>
-            </div>
-            <div class="col-xs-8">
-              <p class="double-lh">Best Wine Lounge <strong>2014</strong><p>
-            </div>
-          </div><!--.row-10-->
-          <div class="row row-10 m_b_15">
-            <div class="col-xs-4">
-              <div class="text-box">NOW JAKARTA</div>
-            </div>
-            <div class="col-xs-8">
-              <p class="double-lh">Best Wine Lounge <strong>2014</strong><p>
-            </div>
-          </div><!--.row-10-->
+          
+          <?php
+		  if($count['rows'] == '0'){
+		     echo '<div class="row row-10 m_b_15">';
+			 echo '<div class="col-xs-12" style="text-align:center;">';
+			 echo 'No press found';
+			 echo '</div>';
+			 echo '</div><!--.row-10-->';
+		  }else{
+		     
+			 foreach($data as $data){
+			    echo '<div class="row row-10 m_b_15">';
+				echo '<div class="col-xs-4">';
+				echo '<div class="text-box">'.strtoupper($data['news_title']).'</div>';
+				echo '</div>';
+				echo '<div class="col-xs-8">';
+				echo '<p class="double-lh">'.$data['news_content'].'<p>';
+				echo '</div>';
+				echo '</div><!--.row-10-->';
+			 }
+			 
+		  }
+		  ?>
+          
         </div><!--div-->
       </div>

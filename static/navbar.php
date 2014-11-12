@@ -4,6 +4,7 @@
 
     <div class="navbar-collapse collapse navbar-data" role="navigation">
       <ul class="nav navbar-nav">
+      
         <li class="<?php if($act == '_about/index'){ echo 'active';}else{ echo 'nav-1';}?>"><a href="<?php echo $prefix_url;?>about">About Us</a></li>
         <li class="<?php if($act == '_food-drinks/index'){ echo 'active';}else{ echo 'nav-1';}?>"><a href="<?php echo $prefix_url;?>food-drinks">Food &amp; Drinks</a></li>
         <li class="<?php if($act == '_wines/index'){ echo 'active';}else{ echo 'nav-1';}?>"><a href="<?php echo $prefix_url;?>wines">Wines</a></li>

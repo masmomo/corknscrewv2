@@ -21,18 +21,8 @@ include('static/body_loader.php');
     <link href="<?php echo $prefix_url;?>assets/css/main.css" rel="stylesheet">
     <link href="<?php echo $prefix_url;?>assets/css/body.css" rel="stylesheet">
     <link href="<?php echo $prefix_url;?>assets/plugins/animate-css/animate.min.css" rel="stylesheet">
-    
-    
-	<?php
-    /* --- GALLERY --- */
-	//if($act == '_gallery/index'){
-	?>
     <link rel="stylesheet" href="<?php echo $prefix_url;?>script/supersized/slideshow/css/supersized.css" type="text/css" media="screen" />
     <link rel="stylesheet" href="<?php echo $prefix_url;?>script/supersized/slideshow/theme/supersized.shutter.css" type="text/css" media="screen" />
-    <?php
-	//}
-	?>
-    
     
     <!--[if lt IE 9]>
       <link href="<?php echo $prefix_url;?>css/ie.css" rel="stylesheet">
@@ -279,10 +269,6 @@ include('static/body_loader.php');
 	   });
 	});
     </script>
-    
-    <?php
-	//}
-	?>
 
   </body>
 </html>

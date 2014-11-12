@@ -109,17 +109,4 @@ if(isset($_POST['btn-index-news-listing'])){
    }
    
 }
-
-
-
-/*
-echo 'PAGE: '.$pgdata['page']."<br>";
-echo 'QUERY PER PAGE: '.$pgdata['query_per_page']."<br>";
-echo 'SORT BY: '.$pgdata['sort_by']."<br>";
-echo 'FIRST RECORD: '.$pgdata['first_record']."<br>";
-echo 'SEARCH PARAMETER: '.$pgdata['search_parameter']."<br>";
-echo 'SEARCH VALUE: '.$pgdata['search_value']."<br>";
-echo 'SEARCH QUERY: '.$pgdata['search_query']."<br>";
-echo 'SEARCH: '.$pgdata['search'];
-*/
 ?>

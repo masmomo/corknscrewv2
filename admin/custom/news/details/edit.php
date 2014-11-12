@@ -9,13 +9,12 @@ include("custom/bridge/news/control_bridge.php");
 ?>
 
           <form method="post" enctype="multipart/form-data">
-
             <div class="subnav">
               <div class="container clearfix">
                 <h1>
                   <span class="glyphicon glyphicon-list"></span> &nbsp; 
-                  <a href="<?php echo $prefix_url."news"?>">News</a> 
-                  <span class="info">/</span> Edit News
+                  <a href="<?php echo $prefix_url."news"?>">Press</a> 
+                  <span class="info">/</span> Edit Press
                 </h1>
                 
                 <div class="btn-placeholder">
@@ -44,23 +43,21 @@ include("custom/bridge/news/control_bridge.php");
             
               <div class="box row">
                 <div class="desc col-xs-3" id="custom_lang">
-                  <h3>News Details</h3>
-                  <p>Manage your news details from title, category, date, and content.</p>
+                  <h3>Press Details</h3>
+                  <p>Manage your press details.</p>
                 </div>
                 <div class="content col-xs-9">
                   <ul class="form-set">
-                    <li class="form-group row underlined" id="lbl_category">
+                    <li class="form-group row hidden" id="lbl_category">
                       <label class="control-label col-xs-3" for="category">Category <span>*</span></label>
                       <div class="col-xs-9">
                         <select class="form-control" id="category" name="category">
                           
 						  <?php 
 						  foreach($all_news_category as $category){
+						     echo '<option value="'.$category['category_id'].'">'.$category['category_name'].'</option>';
+						  }
 						  ?>
-                          
-                          <option value="<?php echo $category['category_id'];?>"><?php echo $category['category_name'];?></option>
-                          
-						  <?php }?>
                           
                         </select>
                       </div>
@@ -73,7 +70,7 @@ include("custom/bridge/news/control_bridge.php");
                       </div>
                     </li>
                     
-                    <li class="form-group row" id="lbl_date">
+                    <li class="form-group row hidden" id="lbl_date">
                       <label class="control-label col-xs-3">Date <span>*</span></label>
                       <div class="col-xs-9">
                         <input type="text" class="form-control" style="width: 300px" name="news_date" id="news-date" value="<?php echo $news_detail['news_date'];?>">
@@ -81,7 +78,7 @@ include("custom/bridge/news/control_bridge.php");
                     </li>
                     
                     
-                    <li class="form-group row underlined image-placeholder input-file" style="position:relative; z-index:1;">
+                    <li class="form-group row underlined image-placeholder input-file hidden" style="position:relative; z-index:1;">
                       <label class="control-label col-xs-3">Cover Image</label>
                       <div class="col-xs-9">
                         <div class="row">
@@ -111,13 +108,15 @@ include("custom/bridge/news/control_bridge.php");
                     <li class="form-group row" id="lbl_content">
                       <label class="control-label col-xs-3">Content <span>*</span></label>
                       <div class="col-xs-9">
-                        <!--<textarea class="form-control" rows="8" id="news-content" name="news_content"><?php echo $news_detail['news_content'];?></textarea>-->
+                        <textarea class="form-control" rows="8" id="news-content" name="news_content"><?php echo $news_detail['news_content'];?></textarea>
                         
 						<?php
+						/*
 						$path = get_dirname($_SERVER['PHP_SELF']);
 						$CKEditor = new CKEditor();
 						$initialValue = $news_detail['news_content'];
 						$code = $CKEditor->editor("news_content", $initialValue);
+						*/
 						?>
                         
                       </div>

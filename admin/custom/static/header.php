@@ -140,7 +140,17 @@ if(empty($act)){
             <li><a href="<?php echo $prefix_url.'project';?>">Projects</a></li>
           </ul>
         </li>
-
+      
+        
+        <li <?php echo $header_products;?>><a data-toggle="dropdown" href="#">Page</a>
+          <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
+            <li><a href="<?php echo $prefix_url;?>page/about">About</a></li>
+            <li><a href="<?php echo $prefix_url;?>page/food-drinks">Food &amp; Drinks</a></li>
+            <li><a href="<?php echo $prefix_url;?>page/wines">Wines</a></li>
+          </ul>
+        </li>
+        
+        <!--
         <li class="hidden"><a data-toggle="dropdown" href="#">Pages</a>
           <ul class="dropdown-menu" role="menu" aria-labelledby="dLabel">
             <li><a href="<?php echo $prefix_url;?>home">Home</a></li>
@@ -152,15 +162,13 @@ if(empty($act)){
             <li><a href="<?php echo $prefix_url.'news';?>">News</a></li>
           </ul>
         </li>
+        -->
         
-        <li class=""><a href="<?php echo $prefix_url;?>about">About</a></li>
-        <li class=""><a href="<?php echo $prefix_url;?>about">Food &amp; Drinks</a></li>
-        <li class=""><a href="<?php echo $prefix_url;?>about">Wines</a></li>
         <li class=""><a href="<?php echo $prefix_url;?>about">Events</a></li>
         <li class=""><a href="<?php echo $prefix_url;?>home">Gallery</a></li>
         <li class=""><a href="<?php echo $prefix_url;?>contact">Contacts</a></li>
-        <li class=""><a href="<?php echo $prefix_url;?>about">Catering</a></li>
-        <li class=""><a href="<?php echo $prefix_url;?>about">Press</a></li>
+        <li class="hidden"><a href="<?php echo $prefix_url;?>about">Catering</a></li>
+        <li class=""><a href="<?php echo $prefix_url;?>news">Press</a></li>
         
       </ul>
       

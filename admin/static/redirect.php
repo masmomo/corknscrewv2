@@ -287,7 +287,8 @@ if(isset($_POST['index-order'])){
 }else if(isset($_POST['btn-about'])){
    
    if($_POST['btn-about'] == "Save Changes"){
-      header("location:http://".$_SERVER['HTTP_HOST'].get_dirname($_SERVER['PHP_SELF'])."/about");
+      //header("location:http://".$_SERVER['HTTP_HOST'].get_dirname($_SERVER['PHP_SELF'])."/about");
+	  header("location:http://".$_SERVER['HTTP_HOST'].get_dirname($_SERVER['PHP_SELF'])."/page/".$_POST['hidden_page']);
    }else{
       header("location:http://".$_SERVER['HTTP_HOST'].get_dirname($_SERVER['PHP_SELF'])."/product");
    }
