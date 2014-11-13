@@ -34,7 +34,15 @@ include('static/body_loader.php');
     <script src="<?php echo $prefix_url;?>assets/js/jquery-ui-1.10.4.custom.min.js"></script>
     <?php include("static/analytics.php"); ?>
   </head>
-  <body class="<?php echo $body_class?>">
+  
+  <?php
+  if($act == '_events/index'){
+     echo '<body style="background:url('.$prefix_url.$data_bg['image'].') no-repeat center center fixed; background-size: cover;">';
+  }else{
+     echo '<body class="'.$body_class.'">';
+  }
+  ?>
+  
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
     <![endif]-->

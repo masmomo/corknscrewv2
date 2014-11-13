@@ -8,8 +8,8 @@ include("control.php");
             
             <div class="subnav">
               <div class="container clearfix">
-                <h1><span class="glyphicon glyphicon-list"></span> &nbsp; Manage Project</h1>
-                <select class="form-control" id="category_name_search" onchange="selectCategory()" style="width: 150px;">
+                <h1><span class="glyphicon glyphicon-list"></span> &nbsp; Manage Events</h1>
+                <select class="form-control hidden" id="category_name_search" onchange="selectCategory()" style="width: 150px;">
                   <option value="top">All Category</option>
                   
                   <?php
@@ -19,7 +19,7 @@ include("control.php");
 				  ?>
                   
                 </select>
-                <div class="btn-placeholder">
+                <div class="btn-placeholder hidden">
                   <a href="<?php echo $prefix_url."add-project";?>">
                     <input type="button" class="btn btn-success btn-sm" value="Add Project">
                   </a>
@@ -44,7 +44,7 @@ include("control.php");
                 <div class="box row">
                   <div class="content">
                     
-                    <div class="actions clearfix">
+                    <div class="actions clearfix hidden">
                       <div class="pull-left">
                         <div class="pull-left custom-select-all" onclick="selectAllToggle()">
                           <input type="checkbox" id="select_all">
@@ -135,7 +135,7 @@ include("control.php");
                     
                     <tr id="<?php echo "row_".$row?>" onclick="selectRow('<?php echo $row;?>')">
                       <td width="38"><input type="checkbox" value="<?php echo $inspiration['inspiration_id']?>" name="inspiration_id[]" id="<?php echo "check_".$row?>" onmouseover="downCheck()" onmouseout="upCheck()" onclick="selectRowCheck('<?php echo $row;?>')"></td>
-                      <td width="652"><a href="<?php echo $prefix_url."project-detail/".$inspiration['inspiration_id'];?>"><?php echo $inspiration['name'];?></a></td>
+                      <td width="652"><a href="<?php echo $prefix_url."events-detail/".$inspiration['inspiration_id'];?>"><?php echo $inspiration['name'];?></a></td>
                       <td width="135"><?php echo format_date($inspiration['date_created']);?></td>
                       <td width="135" class="hidden"><?php echo view_status('active', $loop_data['active']);?></td>
                       <td width="135"><?php echo view_status('inspiration_visibility', $loop_data['inspiration_visibility']);?></td>

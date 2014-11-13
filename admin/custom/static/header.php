@@ -164,7 +164,7 @@ if(empty($act)){
         </li>
         -->
         
-        <li class=""><a href="<?php echo $prefix_url;?>about">Events</a></li>
+        <li class=""><a href="<?php echo $prefix_url;?>events">Events</a></li>
         <li class=""><a href="<?php echo $prefix_url;?>home">Gallery</a></li>
         <li class=""><a href="<?php echo $prefix_url;?>contact">Contacts</a></li>
         <li class="hidden"><a href="<?php echo $prefix_url;?>about">Catering</a></li>

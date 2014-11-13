@@ -42,6 +42,36 @@ else if($act == '_newsletter/index'){
 else if($act == '_events/index'){
    $body_class     = 'bd-events';
    $body_new_class = 'bd-events-content';
+   
+   /* --- FUNCTIONS --- */
+   function count_event(){
+      $conn   = conndB();
+      $sql    = "SELECT COUNT(*) AS rows FROM tbl_inspiration AS main_ INNER JOIN tbl_inspiration_image AS img_ ON main_.inspiration_id = img_.param_inspiration_id";
+      $query  = mysql_query($sql, $conn);
+      $result = mysql_fetch_array($query);
+   
+      return $result;
+   }
+
+
+   function get_event($id){
+      $conn   = conndB();
+      $sql    = "SELECT * FROM tbl_inspiration AS main_ INNER JOIN tbl_inspiration_image AS img_ ON main_.inspiration_id = img_.param_inspiration_id 
+                 WHERE `inspiration_id` = '$id' 
+			     GROUP BY `inspiration_id`
+			    ";
+      $query  = mysql_query($sql, $conn);
+      $result = mysql_fetch_array($query);
+   
+      return $result;
+   }
+
+
+   /* --- CALL FUNCTIONS --- */
+   $count     = count_event();
+   $data_bg   = get_event('5');
+   $data_img  = get_event('6');
+   
 }
 
 

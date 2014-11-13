@@ -142,7 +142,8 @@ else if(isset($_POST['btn_index_tagging'])){
 if(isset($_POST['btn_add_inspiration'])){
    header("location:http://".$_SERVER['HTTP_HOST'].get_dirname($_SERVER['PHP_SELF'])."/add-project");
 }else if(isset($_POST['btn_edit_inspiration'])){
-   header("location:http://".$_SERVER['HTTP_HOST'].get_dirname($_SERVER['PHP_SELF'])."/project-detail/".$_POST['inspiration_id']);
+   //header("location:http://".$_SERVER['HTTP_HOST'].get_dirname($_SERVER['PHP_SELF'])."/project-detail/".$_POST['inspiration_id']);
+   header("location:http://".$_SERVER['HTTP_HOST'].get_dirname($_SERVER['PHP_SELF'])."/events-detail/".$_POST['inspiration_id']);
 }else if(isset($_POST['btn_index_inspiration'])){
    header("location:http://".$_SERVER['HTTP_HOST'].get_dirname($_SERVER['PHP_SELF'])."/project");
 }else if(isset($_POST['btn_detail_project_category'])){

@@ -13,12 +13,12 @@ include("control.php");
               <div class="container clearfix">
                 <h1>
                   <span class="glyphicon glyphicon-list"></span> &nbsp; 
-                  <a href="<?php echo $prefix_url."project"?>">Project</a> 
-                  <span class="info">/</span> Edit Project
+                  <a href="<?php echo $prefix_url."project"?>">Events</a> 
+                  <span class="info">/</span> Edit Events
                 </h1>
                 
                 <div class="btn-placeholder">
-                  <a href="<?php echo $prefix_url."project"?>">
+                  <a href="<?php echo $prefix_url."events"?>">
                     <input type="button" class="btn btn-default btn-sm" value="Cancel">
                   </a>
                   <input type="button" class="btn btn-success btn-sm" value="Save Changes" onclick="validate('save')">
@@ -46,13 +46,13 @@ include("control.php");
             
               <div class="box row">
                 <div class="desc col-xs-3">
-                  <h3>Project</h3>
-                  <p>Manage Project name.</p>
+                  <h3>Events</h3>
+                  <p>Manage events name.</p>
                 </div>
                 
                 <div class="content col-xs-9">
                   <ul class="form-set">
-                    <li class="form-group row">
+                    <li class="form-group row hidden">
                       <label for="brand" class="control-label col-xs-3">Project Category <span>*</span></label>
                       <div class="content col-xs-9">
                         <select class="form-control" name="inspiration_category" id="id_inspiration_category">
@@ -67,9 +67,10 @@ include("control.php");
                       </div>
                     </li>
                     <li class="form-group row" id="lbl_inspiration_name">
-                      <label for="brand" class="control-label col-xs-3">Inspiration Name <span>*</span></label>
+                      <label for="brand" class="control-label col-xs-3">Event Name <span>*</span></label>
                       <div class="content col-xs-9">
-                        <input type="text" class="form-control"name="inspiration_name" id="id_inspiration_name" value="<?php echo $inspiration['name'];?>">
+                        <input type="text" class="form-control" value="<?php echo $inspiration['name'];?>" disabled="disabled">
+                        <input type="hidden" class="form-control"name="inspiration_name" id="id_inspiration_name" value="<?php echo $inspiration['name'];?>">
                       </div>
                     </li>
                   </ul>
@@ -78,14 +79,14 @@ include("control.php");
               
               <div class="box row">
                 <div class="desc col-xs-3">
-                  <h3>Banner</h3>
-                  <p>Add inspiration page banners.</p>
+                  <h3>Image</h3>
+                  <p>Manage image events.</p>
                 </div>
                 
                 <div class="content col-xs-9">
                   <ul class="form-set">
                     <li class="form-group row image-placeholder">
-                      <label class="control-label col-xs-3">Banners</label>
+                      <label class="control-label col-xs-3">Image</label>
                       <div class="col-xs-9">
                         
                         <div class="row">
@@ -127,7 +128,7 @@ include("control.php");
                           </ul><!--sortable-->
                           
 						  <?php
-						  $total_banner = (6 - $count_images['rows']);
+						  $total_banner = (1 - $count_images['rows']);
 						  for($i=($latest_id_img['latest_id'] + 1);$i<=($total_banner + $latest_id_img['latest_id']);$i++){
 						  ?>
                           
@@ -150,40 +151,18 @@ include("control.php");
 						  ?>
                           
                         </div> <!--row-->
-                      <p class="field-message" style="padding-top: 10px">Recommended dimensions of 980 x 500 px.</p>
+                        <?php
+                        if($$inspiration['name'] == 'Background'){
+						   echo '<p class="field-message" style="padding-top: 10px">Recommended dimensions of 1000 x 665 px.</p>';
+						}else if($inspiration['name'] == 'Events'){
+						   echo '<p class="field-message" style="padding-top: 10px">Recommended dimensions of 650 x 400 px.</p>';
+						}
+						?>
                     </div> <!--content col-xs-9-->
                   </li>
                 </ul>
               </div><!--content col-xs-9-->
             </div><!--box-->
-            
-            <div class="box row">
-              <div class="desc col-xs-3">
-                <h3>Featured Products</h3>
-                <p>Edit project featured products.</p>
-              </div>
-              
-              <div class="content col-xs-9">
-                <ul class="form-set">
-                
-				  <?php
-				  foreach($products as $key=>$products){
-				     $existed = get_product($inspiration_id, $products['id']);
-				  ?>
-                  
-                  <li class="form-group row">
-                    <input type="checkbox" name="product_featured[]" value="<?php echo $products['id'];?>" <?php if($existed['param_inspiration_id'] != ''){ echo 'checked="checked"';}?>class="control-label">
-                    &nbsp;
-                    <label for="product-name" class="control-label"><?php echo $products['product_name'];?> <?php echo $a;?></label>
-                  </li>
-                  
-				  <?php
-				  }
-				  ?>
-                  
-                  </ul>
-                </div>
-              </div><!--box-->
 
             </div><!--main-content-->
             

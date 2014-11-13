@@ -564,59 +564,27 @@ RewriteRule ^download-file/(.*)$                                         index.p
 
 
 
-###################
-#                 #
-#      ADMIN      #
-#                 #
-###################
+# ----------------------------------------------------------------------
+# ADMIN
+# ----------------------------------------------------------------------
 
-
-RewriteRule ^admin/bless$               admin/index.php?act=dashboard/index
-RewriteRule ^admin/accounts$            admin/index.php?act=settings/account/account
-RewriteRule ^admin/general$             admin/index.php?act=settings/general
-RewriteRule ^admin/notifications$       admin/index.php?act=settings/notifications/index
-RewriteRule ^admin/payment$             admin/index.php?act=settings/payment/index
-
-RewriteRule ^admin/bless$               admin/index.php?act=dashboard/index
+RewriteRule ^admin/accounts$            								admin/index.php?act=settings/account/account
+RewriteRule ^admin/general$             								admin/index.php?act=settings/general
+RewriteRule ^admin/notifications$       								admin/index.php?act=settings/notifications/index
+RewriteRule ^admin/payment$             								admin/index.php?act=settings/payment/index
 
 # HOME
-RewriteRule ^admin/home$                admin/index.php?act=pages/home/home
+RewriteRule ^admin/home$                								admin/index.php?act=pages/home/home
+RewriteRule ^admin/events$                								admin/index.php?act=custom/inspiration/index
+RewriteRule ^admin/events-detail/(.*)$                					admin/index.php?act=custom/inspiration/detail/index&ins_id=$1
 
 # ABOUT
-#RewriteRule ^admin/about$               admin/index.php?act=pages/about/about
-RewriteRule ^admin/page/(.*)$               admin/index.php?act=pages/about/about&page=$1
+#RewriteRule ^admin/about$               								admin/index.php?act=pages/about/about
+RewriteRule ^admin/page/(.*)$               							admin/index.php?act=pages/about/about&page=$1
 
 # CONTACT
-RewriteRule ^admin/contact$             admin/index.php?act=pages/contact_/contact
+RewriteRule ^admin/contact$             								admin/index.php?act=pages/contact_/contact
 
-
-
-# ----------------------------------------------------------------------
-# ORDER
-# ----------------------------------------------------------------------
-RewriteRule ^admin/order$                  									    admin/index.php?act=orders/index
-RewriteRule ^admin/order-view/(.*)/(.*)/(.*)/(.*)-(.*)$                         admin/index.php?act=orders/index&pg=$1&qpp=$2&srt=$3&src=$4&srcval=$5
-RewriteRule ^admin/order-detail/(.*)$   										admin/index.php?act=orders/details/edit&oid=$1
-RewriteRule ^admin/order-detailing/(.*)$   										admin/index.php?act=orders/details/index&oid=$1
-
-RewriteRule ^admin/order-open$                  							    admin/index.php?act=orders/open/index
-RewriteRule ^admin/order-open-view/(.*)/(.*)/(.*)/(.*)-(.*)$                    admin/index.php?act=orders/open/index&pg=$1&qpp=$2&srt=$3&src=$4&srcval=$5
-
-RewriteRule ^admin/order-expired$                  							    admin/index.php?act=orders/expired_/index
-RewriteRule ^admin/order-expired-view/(.*)/(.*)/(.*)/(.*)-(.*)$                 admin/index.php?act=orders/expired_/index&pg=$1&qpp=$2&srt=$3&src=$4&srcval=$5
-
-RewriteRule ^admin/order-cancelled$                  							admin/index.php?act=orders/cancel/index
-RewriteRule ^admin/order-cancelled-view/(.*)/(.*)/(.*)/(.*)-(.*)$               admin/index.php?act=orders/cancel/index&pg=$1&qpp=$2&srt=$3&src=$4&srcval=$5
-
-
-# ----------------------------------------------------------------------
-# PRODUCT
-# ----------------------------------------------------------------------
-RewriteRule ^admin/product$                     								admin/index.php?act=products/index
-RewriteRule ^admin/product-details-(.*)$        								admin/index.php?act=products/details/edit&product_alias=$1
-RewriteRule ^admin/add-product$                 								admin/index.php?act=products/add/index
-RewriteRule ^admin/product-view/(.*)/(.*)/(.*)/(.*)/(.*)-(.*)$        			admin/index.php?act=products/index&pg=$1&cat=$2&qpp=$3&srt=$4&src=$5&srcval=$6 [B]
-RewriteRule ^admin/products/add/index.php       								admin/add-product
 
 
 # ----------------------------------------------------------------------
@@ -661,6 +629,8 @@ RewriteRule ^admin/edit-shipping/(.*)$            								admin/index.php?act=se
 
 RewriteRule ^admin/logout$                                                      admin/logout.php
 
+
+
 # ADDITION
 
 RewriteRule ^admin/add-category$                                                admin/index.php?act=products/category/add
@@ -678,11 +648,10 @@ RewriteRule ^admin/recover-password/(.*)/(.*)/(.*)$                             
 RewriteRule ^admin/reset-password$                                              admin/emails/resetpassword.html
 
 
-###################
-#                 #
-#     CUSTOMS     #
-#                 #
-#################### 
+
+# ----------------------------------------------------------------------
+# CUSTOM
+# ----------------------------------------------------------------------
 
 #NEW ARRIVAL
 RewriteRule ^admin/new-arrivals$            					                admin/index.php?act=custom/new_arrival/index

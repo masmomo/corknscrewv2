@@ -34,5 +34,5 @@
         </div>
         
         <br>
-        Let us know what we can do for you <a href=""><strong>CLICK HERE</strong></a>
+        Let us know what we can do for you <a href="<?php echo 'http://www/corknscrew.biz/catering';?>"><strong>CLICK HERE</strong></a>
       </div>
