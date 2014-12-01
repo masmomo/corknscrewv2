@@ -43,7 +43,7 @@ $data_kodel  = get_contact('wisma_kodel');
             </div>
           </div><!--.col-xs-6-->
           <div class="col-xs-6">
-            <div class="text-box">WISMA KODEL</div>
+            <div class="text-box">PACIFIC PLACE</div>
             <br>
             <div>
               <?php echo preg_replace("/\n/","\n<br>",$data_kodel['address']);?>

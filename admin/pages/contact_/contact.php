@@ -51,7 +51,7 @@ include("custom/pages/contact/control.php");
               </div>
             </li>
             <li class="form-group row">
-              <label class="col-xs-3">Wisma Kodel</label>
+              <label class="col-xs-3">Pacific Place</label>
             </li>
             <li class="form-group row">
               <label class="col-xs-3">Address</label>

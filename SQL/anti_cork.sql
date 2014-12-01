@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: localhost
--- Generation Time: Nov 12, 2014 at 08:52 AM
+-- Generation Time: Dec 01, 2014 at 05:47 AM
 -- Server version: 5.6.20
 -- PHP Version: 5.5.15
 
@@ -2813,7 +2813,7 @@ CREATE TABLE IF NOT EXISTS `tbl_general` (
 --
 
 INSERT INTO `tbl_general` (`general_id`, `url`, `website_title`, `website_description`, `website_keywords`, `analytics_code`, `company_phone`, `company_email`, `company_address`, `company_country`, `company_province`, `company_city`, `company_postal_code`, `company_facebook`, `company_twitter`, `company_instagram`, `currency_rate`, `logo`) VALUES
-(1, 'http://www.corkandscrew.com', 'Cork & Screw', 'Cork', 'fine dining, wines, food, beverage', 'UA-40171222-1', '021 888 999', 'info@wanderlust.com', 'Jl. Gatot Subroto Km. 8\r\nTangerang 15810 - Indonesia \r\n+62 21 59303333 (Tel)\r\n+62 21 5904694 (Fax)\r\ninfo@propanraya.com', 'ID', 'Banten', 'Tangerang Selatan', '123456', 'https://www.facebook.com/cnsjakarta', 'https://www.twitter.com/cnsjakarta', 'http://www.instagram.com/cnsjakarta', 0, 'files/common/logo-logo.png');
+(1, 'http://www.corkandscrew.com', 'Cork & Screw', 'Cork', 'fine dining, wines, food, beverage', 'UA-40171222-1', '021 888 999', 'info@wanderlust.com', 'Jl. Gatot Subroto Km. 8\r\nTangerang 15810 - Indonesia \r\n+62 21 59303333 (Tel)\r\n+62 21 5904694 (Fax)\r\ninfo@propanraya.com', 'ID', 'Banten', 'Tangerang Selatan', '123456', 'https://www.facebook.com/cnsjakarta', 'https://www.twitter.com/corknscrew', 'http://www.instagram.com/corknscrew', 0, 'files/common/logo-logo.png');
 
 -- --------------------------------------------------------
 
@@ -2909,8 +2909,8 @@ CREATE TABLE IF NOT EXISTS `tbl_inspiration` (
 --
 
 INSERT INTO `tbl_inspiration` (`inspiration_id`, `name`, `description`, `date_created`, `active`, `inspiration_visibility`, `category`) VALUES
-(5, 'Your logistic partner', 'Providing various services such as sea and air freight, customs brokerage, logistics, transportation, and household removal.', '2014-07-16', 1, 1, 1),
-(6, 'Your logistic partner Nike', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '2014-07-16', 1, 1, 2);
+(5, 'Background', 'Providing various services such as sea and air freight, customs brokerage, logistics, transportation, and household removal.', '2014-07-16', 1, 1, 1),
+(6, 'Events', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.', '2014-07-16', 1, 1, 2);
 
 -- --------------------------------------------------------
 
@@ -2961,15 +2961,15 @@ CREATE TABLE IF NOT EXISTS `tbl_inspiration_image` (
   `order` int(11) NOT NULL,
   `active` int(11) NOT NULL,
   `visibility` int(11) NOT NULL
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=6 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
 
 --
 -- Dumping data for table `tbl_inspiration_image`
 --
 
 INSERT INTO `tbl_inspiration_image` (`inspiration_image_id`, `param_inspiration_id`, `image`, `order`, `active`, `visibility`) VALUES
-(4, 5, 'files/uploads/inspiration_image/inspiration-0-img-banner.jpg', 0, 1, 1),
-(5, 6, 'files/uploads/inspiration_image/inspiration-0-tour-bg.jpg', 0, 1, 1);
+(2, 5, 'files/uploads/event_images/events-1-bg-events.jpg', 0, 1, 1),
+(3, 6, 'files/uploads/event_images/events-3-img-events.jpg', 0, 1, 1);
 
 -- --------------------------------------------------------
 
@@ -4493,7 +4493,7 @@ MODIFY `inspiration_featured_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=
 -- AUTO_INCREMENT for table `tbl_inspiration_image`
 --
 ALTER TABLE `tbl_inspiration_image`
-MODIFY `inspiration_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=6;
+MODIFY `inspiration_image_id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=4;
 --
 -- AUTO_INCREMENT for table `tbl_inspiration_tag`
 --
